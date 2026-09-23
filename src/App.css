@@ -60,6 +60,91 @@ button:focus-visible {
   outline: 2px solid var(--accent-light);
   outline-offset: 4px;
 }
+
+/* Text-only highlight for selected non-interactive labels. */
+.text-shimmer {
+  --text-shimmer-base: var(--text);
+
+  background-image: linear-gradient(
+    90deg,
+    var(--text-shimmer-base) 0%,
+    var(--text-shimmer-base) 42%,
+    var(--accent-light) 47%,
+    #ffffff 50%,
+    var(--accent-light) 53%,
+    var(--text-shimmer-base) 58%,
+    var(--text-shimmer-base) 100%
+  );
+  background-size: 250% 100%;
+  background-position: 100% 0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-shimmer:hover {
+  animation: text-shimmer-sweep 3s linear infinite;
+}
+
+@keyframes text-shimmer-sweep {
+  from {
+    background-position: 100% 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
+
+.nav-links a,
+.hero-socials a,
+.project-links a,
+.project-demo,
+.contact-links a,
+.footer-links a {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-links a::after,
+.hero-socials a::after,
+.project-links a::after,
+.project-demo::after,
+.contact-links a::after,
+.footer-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -4px;
+
+  width: 100%;
+  height: 2px;
+
+  background: var(--accent);
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform var(--motion-base) var(--motion-ease);
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after,
+.hero-socials a:hover::after,
+.hero-socials a:focus-visible::after,
+.project-links a:hover::after,
+.project-links a:focus-visible::after,
+.project-demo:hover::after,
+.project-demo:focus-visible::after,
+.contact-links a:hover::after,
+.contact-links a:focus-visible::after,
+.footer-links a:hover::after,
+.footer-links a:focus-visible::after {
+  transform: scaleX(1);
+}
 /* =========================
    NAVBAR
 ========================= */
@@ -86,6 +171,14 @@ button:focus-visible {
   font-size: 24px;
   font-weight: 800;
   color: var(--accent-light);
+
+  transition: color var(--motion-base) var(--motion-ease),
+    transform var(--motion-base) var(--motion-ease);
+}
+
+.logo:hover {
+  color: #a7a2ff;
+  transform: translateY(-1px);
 }
 
 .nav-links {
@@ -214,6 +307,8 @@ button:focus-visible {
 }
 
 .hero h2 {
+  --text-shimmer-base: #d4d4d8;
+
   font-size: clamp(24px, 4vw, 40px);
 
   color: #d4d4d8;
@@ -558,6 +653,8 @@ main > section:not(.hero) h1 {
 }
 
 .section-heading p {
+  --text-shimmer-base: var(--accent-light);
+
   color: var(--accent-light);
 
   font-size: 12px;
@@ -1223,5 +1320,9 @@ main > section:not(.hero) h1 {
   .contact-card:hover,
   .footer-links a:hover {
     transform: none;
+  }
+
+  .text-shimmer:hover {
+    animation: none;
   }
 }

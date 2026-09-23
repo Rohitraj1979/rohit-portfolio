@@ -2,8 +2,8 @@ function About() {
   return (
     <section className="about" id="about">
       <div className="section-heading">
-        <p>GET TO KNOW ME</p>
-        <h2>About Me</h2>
+        <p className="text-shimmer">GET TO KNOW ME</p>
+        <h2 className="text-shimmer">About Me</h2>
       </div>
 
       <div className="about-content">

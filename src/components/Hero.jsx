@@ -12,7 +12,7 @@ function Hero() {
           Rohit Rajbhar
         </h1>
 
-        <h2>
+        <h2 className="text-shimmer">
           Java Full Stack Developer
         </h2>
 
@@ -33,7 +33,7 @@ function Hero() {
 
         <div className="hero-socials">
           <a
-            href="https://github.com/"
+            href="https://github.com/Rohitraj1979/"
             target="_blank"
             rel="noreferrer"
           >
@@ -41,7 +41,7 @@ function Hero() {
           </a>
 
           <a
-            href="https://linkedin.com/"
+            href="https://linkedin.com/in/rohitraj2006/"
             target="_blank"
             rel="noreferrer"
           >

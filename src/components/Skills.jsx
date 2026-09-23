@@ -26,8 +26,8 @@ function Skills() {
     <section className="skills" id="skills">
 
       <div className="section-heading">
-        <p>WHAT I WORK WITH</p>
-        <h2>Skills</h2>
+        <p className="text-shimmer">WHAT I WORK WITH</p>
+        <h2 className="text-shimmer">Skills</h2>
       </div>
 
       <div className="skills-grid">

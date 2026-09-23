@@ -3,14 +3,14 @@ function Contact() {
     <section className="contact" id="contact">
 
       <div className="section-heading">
-        <p>GET IN TOUCH</p>
-        <h2>Let's Connect</h2>
+        <p className="text-shimmer">GET IN TOUCH</p>
+        <h2 className="text-shimmer">Let's Connect</h2>
       </div>
 
       <div className="contact-content">
 
         <div className="contact-text">
-          <h3>
+          <h3 className="text-shimmer">
             Have a project or opportunity?
           </h3>
 
@@ -22,12 +22,12 @@ function Contact() {
 
           <div className="contact-links">
 
-            <a href="mailto:your-email@gmail.com">
+            <a href="mailto:rajbharrohit1979@gmail.com">
               Email →
             </a>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/Rohitraj1979/"
               target="_blank"
               rel="noreferrer"
             >
@@ -35,7 +35,7 @@ function Contact() {
             </a>
 
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/rohitraj2006"
               target="_blank"
               rel="noreferrer"
             >
@@ -49,7 +49,7 @@ function Contact() {
 
           <span>AVAILABLE FOR</span>
 
-          <h3>
+          <h3 className="text-shimmer">
             Full Stack Development
           </h3>
 

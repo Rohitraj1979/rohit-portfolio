@@ -3,8 +3,8 @@ function Education() {
     <section className="education" id="education">
 
       <div className="section-heading">
-        <p>MY ACADEMIC JOURNEY</p>
-        <h2>Education</h2>
+        <p className="text-shimmer">MY ACADEMIC JOURNEY</p>
+        <h2 className="text-shimmer">Education</h2>
       </div>
 
       <div className="education-card">
@@ -14,7 +14,7 @@ function Education() {
         </div>
 
         <div className="education-content">
-          <h3>B.Sc. Information Technology</h3>
+          <h3 className="text-shimmer">B.Sc. Information Technology</h3>
 
           <h4>
             St. John College of Humanities and Sciences
@@ -41,7 +41,7 @@ function Education() {
         </div>
 
         <div className="education-content">
-          <h3>12th Science</h3>
+          <h3 className="text-shimmer">12th Science</h3>
 
           <h4>
             Sanskruti Junior College
@@ -67,7 +67,7 @@ function Education() {
         </div>
 
         <div className="education-content">
-          <h3>10th Standard</h3>
+          <h3 className="text-shimmer">10th Standard</h3>
 
           <h4>
             Dr. S. D. Vartak Vidyalaya
