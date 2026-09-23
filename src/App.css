@@ -573,36 +573,6 @@ main > section:not(.hero) h1 {
     width: 100%;
   }
 
-
-  .about-content {
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-  }
-
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-
-  .education-card {
-    grid-template-columns: 1fr;
-
-    gap: 15px;
-  }
-
-
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-
-
   .footer {
     flex-direction: column;
 
@@ -1289,6 +1259,37 @@ main > section:not(.hero) h1 {
 .footer-links a:hover {
   color: white;
   transform: translateX(4px);
+}
+
+/* These follow their desktop grid definitions so they take precedence on mobile. */
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
