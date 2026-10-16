@@ -10,40 +10,40 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      <a href="#home" className="logo" onClick={closeMenu}>
+      <a href="/#home" className="logo" onClick={closeMenu}>
         RR.
       </a>
 
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
 
-        <a href="#home" onClick={closeMenu}>
+        <a href="/#home" onClick={closeMenu}>
           Home
         </a>
 
-        <a href="#about" onClick={closeMenu}>
+        <a href="/#about" onClick={closeMenu}>
           About
         </a>
 
-        <a href="#skills" onClick={closeMenu}>
+        <a href="/#skills" onClick={closeMenu}>
           Skills
         </a>
 
-        <a href="#projects" onClick={closeMenu}>
+        <a href="/#projects" onClick={closeMenu}>
           Projects
         </a>
 
-        <a href="#education" onClick={closeMenu}>
+        <a href="/#education" onClick={closeMenu}>
           Education
         </a>
 
-        <a href="#contact" onClick={closeMenu}>
+        <a href="/#contact" onClick={closeMenu}>
           Contact
         </a>
 
       </div>
 
       <a
-        href="#contact"
+        href="/#contact"
         className="nav-button"
       >
         Let's Talk

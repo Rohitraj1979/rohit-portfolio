@@ -7,8 +7,14 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ProjectDetails from "./components/ProjectDetails";
 
 function App() {
+  const pathname = window.location.pathname.replace(/\/+$/, "");
+  if (pathname === "/projects/iv-drop-monitoring") {
+    return <ProjectDetails />;
+  }
+
   return (
     <>
       <Navbar />
