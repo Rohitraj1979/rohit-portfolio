@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/projects/iv-drop-monitoring",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/projects/iv-drop-monitoring/",
+      "destination": "/index.html"
+    }
+  ]
+}
